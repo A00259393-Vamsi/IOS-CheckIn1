@@ -2,7 +2,7 @@
 //  FavoriteTableViewController.swift
 //  swapi
 //
-//  Created by Snehith Reddy Yeruva on 16/12/22.
+//  Created by Vamsi Allu on 16/12/22.
 //
 
 import UIKit
@@ -16,7 +16,6 @@ class FavoriteTableViewController: UITableViewController {
         numberList = NumberHelper.getNumberList().filter {
             $0.isFavorite == true
         }
-        print(numberList)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

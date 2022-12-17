@@ -2,7 +2,7 @@
 //  TableViewController.swift
 //  swapi
 //
-//  Created by Shubham Dhamane on 08/12/22.
+//  Created by Vamsi Allu on 08/12/22.
 //
 
 import UIKit

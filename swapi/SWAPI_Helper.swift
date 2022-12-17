@@ -2,7 +2,7 @@
 //  SWAPI_Helper.swift
 //  swapi
 //
-//  Created by Cambrian on 2022-09-20.
+//  Created by Vamsi Allu on 2022-09-20.
 //
 
 import Foundation

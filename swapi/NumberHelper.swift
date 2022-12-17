@@ -2,7 +2,7 @@
 //  NumberHelper.swift
 //  swapi
 //
-//  Created by Snehith Reddy Yeruva on 16/12/22.
+//  Created by Vamsi Allu on 16/12/22.
 //
 
 import Foundation
