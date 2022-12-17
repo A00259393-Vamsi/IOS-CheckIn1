@@ -6,16 +6,15 @@
 //
 
 import UIKit
+import CoreData
 
 class FavoriteTableViewController: UITableViewController {
     
     var numberList = [Number]();
 
+    @IBOutlet weak var numberTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        numberList = NumberHelper.getNumberList().filter {
-            $0.isFavorite == true
-        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -32,7 +31,7 @@ class FavoriteTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return numberList.count
+        return SWAPI_Helper.numbers.count;
     }
 
     
@@ -40,9 +39,8 @@ class FavoriteTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavNumberIdentifier", for: indexPath)
 
         // Configure the cell...
-        let numbers = numberList[indexPath.row]
-        cell.textLabel?.text = numbers.numberStatement;
-
+        let numbers = SWAPI_Helper.numbers[indexPath.row]
+        cell.textLabel?.text = numbers.value(forKeyPath: "numberStatement") as? String
         return cell
     }
     
@@ -91,5 +89,26 @@ class FavoriteTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func getDataFromStorage(){
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+              return
+            }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "NumberEntity")
+        fetchRequest.predicate = NSPredicate(format: "isFavorite == true")
+        do {
+            SWAPI_Helper.numbers = try managedContext.fetch(fetchRequest)
+            self.numberTableView.reloadData()
+            } catch let error as NSError {
+              print("Could not fetch. \(error), \(error.userInfo)")
+            }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getDataFromStorage()
+      }
 
 }

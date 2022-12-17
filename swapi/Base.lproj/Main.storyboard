@@ -78,6 +78,42 @@
             </objects>
             <point key="canvasLocation" x="-728" y="587"/>
         </scene>
+        <!--Update View Controller-->
+        <scene sceneID="cUS-aa-8qV">
+            <objects>
+                <viewController storyboardIdentifier="UpdateViewController" id="ZPm-Jw-KIo" customClass="UpdateViewController" customModule="swapi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Ht-9e-xge">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIe-CH-zu1">
+                                <rect key="frame" x="28" y="161" width="346" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQR-cd-DLO">
+                                <rect key="frame" x="28" y="568" width="345" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Mark as Favorite"/>
+                                <connections>
+                                    <action selector="markAsFavorite:" destination="ZPm-Jw-KIo" eventType="touchUpInside" id="rLg-9D-X4p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tZc-jc-sx7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelData" destination="xIe-CH-zu1" id="faZ-Bu-VC4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FmE-9m-U6c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2466.1538461538462" y="1267.5355450236966"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="2Ap-2b-WMW">
             <objects>
@@ -134,6 +170,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="hFf-Ob-sRK"/>
+                    <connections>
+                        <outlet property="numberTableView" destination="TiY-Tt-bam" id="75G-pW-2ER"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47W-14-jKE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
