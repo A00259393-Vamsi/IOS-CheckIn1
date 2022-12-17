@@ -11,13 +11,14 @@ class SWAPI_Helper{
     static private let urlString = "http://numbersapi.com/";
     
     static let apiResponse = "";
-	
+    static var enteredNumber = "0";
+    
     static private let session: URLSession = {
         let config = URLSessionConfiguration.default
         return URLSession(configuration: config)
     }()
     
-    static public func fetchMath(enteredNumber: String) -> String {
+    static public func fetchMath(completion handler: @escaping (Data?, Error?) -> Void) {
         let urlStringMath = urlString + enteredNumber + "/math";
         print(#function)
         guard
@@ -33,21 +34,19 @@ class SWAPI_Helper{
         let task = session.dataTask(with: request) {
             data, response, error in
             
-            if let data = data, let dataString = String(data: data, encoding: .utf8) {
-                    print("Response data string:\n \(dataString)")
-            }
-            else if let error = error {
-                print("error with data task, fetchMath: \(error)")
+            if let data = data {
+                handler(data, error)
+            } else if let error = error {
+                handler(data, error)
             } else {
                 print("something went wrong when fetching the directory: \(String(describing: response))")
             }
         }
         task.resume()
         
-        return apiResponse;
     }
 	
-    static public func fetchDate(enteredNumber: String) -> String{
+    static public func fetchDate(completion handler: @escaping (Data?, Error?) -> Void){
         let enteredDate = enteredNumber.split(separator: "/");
         let urlStringDate = urlString + enteredDate[0] + "/" + enteredDate[1] + "/date";
         print(#function)
@@ -57,24 +56,25 @@ class SWAPI_Helper{
             preconditionFailure("was not able to convert string to url: \(urlStringDate)")
         }
         
-        let request = URLRequest(url: url)
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "GET"
+        
         let task = session.dataTask(with: request) {
             data, response, error in
             
-            if let data = data, let dataString = String(data: data, encoding: .utf8) {
-                    print("Response data string:\n \(dataString)")
+            if let data = data {
+                handler(data, error)
             } else if let error = error {
-                print("error with data task, fetchDate: \(error)")
+                handler(data, error)
             } else {
                 print("something went wrong when fetching the directory: \(String(describing: response))")
             }
         }
         task.resume()
-        
-        return apiResponse
     }
 	
-    static public func fetchNumber(enteredNumber: String) -> String{
+    static public func fetchNumber(completion handler: @escaping (Data?, Error?) -> Void){
         let urlStringNumber = urlString + enteredNumber;
         print(#function)
         guard
@@ -89,16 +89,15 @@ class SWAPI_Helper{
         let task = session.dataTask(with: request) {
             data, response, error in
             
-            if let data = data, let dataString = String(data: data, encoding: .utf8) {
-                    print("Response data string:\n \(dataString)")
+            if let data = data {
+                handler(data, error)
             } else if let error = error {
-                print("error with data task, fetchNumber: \(error)")
-            } else {
+                handler(data, error)
+            }else {
                 print("something went wrong when fetching the directory: \(String(describing: response))")
             }
         }
         task.resume()
         
-        return apiResponse
     }
 }

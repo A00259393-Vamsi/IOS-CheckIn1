@@ -177,14 +177,6 @@
                                     <action selector="getDate:" destination="WOn-uI-qwP" eventType="touchUpInside" id="4Jp-gR-bE0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J65-1e-hqo">
-                                <rect key="frame" x="22" y="272" width="345" height="288"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc2-66-4XU">
                                 <rect key="frame" x="22" y="628" width="345" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -194,6 +186,13 @@
                                     <action selector="markAsFavorite:" destination="WOn-uI-qwP" eventType="touchUpInside" id="q9N-wQ-FcI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="jokeLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZr-lW-at3">
+                                <rect key="frame" x="22" y="303" width="345" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gQx-Oq-0Kt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -201,7 +200,7 @@
                     <navigationItem key="navigationItem" id="Wad-LQ-ZRb"/>
                     <connections>
                         <outlet property="enteredNumber" destination="WmN-u4-tik" id="AMJ-nZ-RaW"/>
-                        <outlet property="jokeLabel" destination="J65-1e-hqo" id="jWS-dR-ngv"/>
+                        <outlet property="jokeLabel" destination="kZr-lW-at3" id="6fU-Ck-Vm1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mms-2z-Vcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -212,9 +211,6 @@
     <resources>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

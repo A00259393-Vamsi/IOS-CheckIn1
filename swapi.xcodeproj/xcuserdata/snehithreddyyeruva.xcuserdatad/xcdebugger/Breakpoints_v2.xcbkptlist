@@ -14,56 +14,40 @@
             filePath = "swapi/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "getTriviaNumber(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A4944D42-C3B1-4BC9-B9F8-DD5EFBEE61D9"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "swapi/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "getTriviaNumber(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "A4944D42-C3B1-4BC9-B9F8-DD5EFBEE61D9 - fd8445e8fbb39e9"
+                  uuid = "AE5019E7-89EB-4F69-AA29-718464F310D5 - 85312e9928bcb4dc"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "swapi.ViewController.getTriviaNumber(__C.UIButton) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in swapi.ViewController.getTriviaNumber(__C.UIButton) -&gt; ()"
                   moduleName = "swapi"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "764">
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "928">
                </Location>
                <Location
-                  uuid = "A4944D42-C3B1-4BC9-B9F8-DD5EFBEE61D9 - fd8445e8fbb39e9"
+                  uuid = "AE5019E7-89EB-4F69-AA29-718464F310D5 - 85312e9928bcb4dc"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "swapi.ViewController.getTriviaNumber(__C.UIButton) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in swapi.ViewController.getTriviaNumber(__C.UIButton) -&gt; ()"
                   moduleName = "swapi"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "1404">
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "936">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -78,10 +62,42 @@
             filePath = "swapi/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "getTriviaNumber(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "858D4293-7AEF-4850-8F5A-C08734FB566C - 85312e9928bcb4dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in swapi.ViewController.getTriviaNumber(__C.UIButton) -&gt; ()"
+                  moduleName = "swapi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "928">
+               </Location>
+               <Location
+                  uuid = "858D4293-7AEF-4850-8F5A-C08734FB566C - 85312e9928bcb4dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in swapi.ViewController.getTriviaNumber(__C.UIButton) -&gt; ()"
+                  moduleName = "swapi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "936">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -94,72 +110,8 @@
             filePath = "swapi/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "getMath(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "550B8E04-A286-4A73-A4A7-34F36C2373CC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "swapi/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
             endingLineNumber = "24"
-            landmarkName = "getMath(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "550B8E04-A286-4A73-A4A7-34F36C2373CC - f3090705bc8b5631"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "swapi.ViewController.getMath(__C.UIButton) -&gt; ()"
-                  moduleName = "swapi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "764">
-               </Location>
-               <Location
-                  uuid = "550B8E04-A286-4A73-A4A7-34F36C2373CC - f3090705bc8b5631"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "swapi.ViewController.getMath(__C.UIButton) -&gt; ()"
-                  moduleName = "swapi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "1404">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "863AEE6E-31CF-4A70-B099-C6A7EBC838D7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "swapi/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
             landmarkName = "getMath(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,9 +126,9 @@
             filePath = "swapi/SWAPI_Helper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "fetchMath(enteredNumber:)"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "fetchMath(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -190,9 +142,9 @@
             filePath = "swapi/SWAPI_Helper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "fetchMath(enteredNumber:)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchMath(completion:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -238,9 +190,9 @@
             filePath = "swapi/SWAPI_Helper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "fetchMath(enteredNumber:)"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchMath(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -304,55 +256,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
             endingLineNumber = "92"
-            landmarkName = "fetchNumber(enteredNumber:)"
+            landmarkName = "fetchNumber(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "68F10CBB-A627-4976-B6FE-F7CE9C8A050E - d0c66617c50960b3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static swapi.SWAPI_Helper.fetchNumber(enteredNumber: Swift.String) -&gt; Swift.String"
-                  moduleName = "swapi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/SWAPI_Helper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "92"
-                  endingLineNumber = "92"
-                  offsetFromSymbolStart = "200">
-               </Location>
-               <Location
-                  uuid = "68F10CBB-A627-4976-B6FE-F7CE9C8A050E - d0c66617c50960b3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static swapi.SWAPI_Helper.fetchNumber(enteredNumber: Swift.String) -&gt; Swift.String"
-                  moduleName = "swapi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/SWAPI_Helper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "92"
-                  endingLineNumber = "92"
-                  offsetFromSymbolStart = "248">
-               </Location>
-               <Location
-                  uuid = "68F10CBB-A627-4976-B6FE-F7CE9C8A050E - d0c66617c50960b3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static swapi.SWAPI_Helper.fetchNumber(enteredNumber: Swift.String) -&gt; Swift.String"
-                  moduleName = "swapi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/SWAPI_Helper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "92"
-                  endingLineNumber = "92"
-                  offsetFromSymbolStart = "392">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -367,7 +272,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "86"
             endingLineNumber = "86"
-            landmarkName = "fetchNumber(enteredNumber:)"
+            landmarkName = "fetchNumber(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -381,55 +286,71 @@
             filePath = "swapi/SWAPI_Helper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "fetchMath(enteredNumber:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "fetchMath(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "695F5AF8-7FDC-4CD5-A933-5F6BDDD02564"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swapi/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "getTriviaNumber(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "961DEDD1-F6D1-4F79-B464-AC157DC3FBC4 - 23f2970f19d9fa67"
+                  uuid = "695F5AF8-7FDC-4CD5-A933-5F6BDDD02564 - 85312e9928bcabc5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static swapi.SWAPI_Helper.fetchMath(enteredNumber: Swift.String) -&gt; Swift.String"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in swapi.ViewController.getTriviaNumber(__C.UIButton) -&gt; ()"
                   moduleName = "swapi"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/SWAPI_Helper.swift"
+                  urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "200">
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "264">
                </Location>
                <Location
-                  uuid = "961DEDD1-F6D1-4F79-B464-AC157DC3FBC4 - 23f2970f19d9fa67"
+                  uuid = "695F5AF8-7FDC-4CD5-A933-5F6BDDD02564 - 85312e9928bcabc5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static swapi.SWAPI_Helper.fetchMath(enteredNumber: Swift.String) -&gt; Swift.String"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in swapi.ViewController.getTriviaNumber(__C.UIButton) -&gt; ()"
                   moduleName = "swapi"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/SWAPI_Helper.swift"
+                  urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "248">
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "312">
                </Location>
                <Location
-                  uuid = "961DEDD1-F6D1-4F79-B464-AC157DC3FBC4 - 23f2970f19d9fa67"
+                  uuid = "695F5AF8-7FDC-4CD5-A933-5F6BDDD02564 - 85312e9928bcabc5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static swapi.SWAPI_Helper.fetchMath(enteredNumber: Swift.String) -&gt; Swift.String"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in swapi.ViewController.getTriviaNumber(__C.UIButton) -&gt; ()"
                   moduleName = "swapi"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/SWAPI_Helper.swift"
+                  urlString = "file:///Users/snehithreddyyeruva/Desktop/vamsi/FinalProject/IOS-CheckIn1/swapi/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "392">
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "448">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -437,16 +358,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "911506A6-D308-4DDC-B606-7D3677B31E2B"
+            uuid = "1198AF90-E95E-43A3-ABF3-0368008B39FB"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "swapi/SWAPI_Helper.swift"
+            filePath = "swapi/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "fetchMath(enteredNumber:)"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getMath(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
