@@ -8,16 +8,17 @@
 import Foundation
 
 class SWAPI_Helper{
-    static private let urlStringMath = "http://numbersapi.com/#5/math";
-    static private let urlStringDate = "http://numbersapi.com/#11/13/date";
-	static private let urlStringNumber = "http://numbersapi.com/#42";
+    static private let urlString = "http://numbersapi.com/";
+    
+    static let apiResponse = "";
 	
     static private let session: URLSession = {
         let config = URLSessionConfiguration.default
         return URLSession(configuration: config)
     }()
     
-    static public func fetchMath(){
+    static public func fetchMath(enteredNumber: String) -> String {
+        let urlStringMath = urlString + enteredNumber + "/math";
         print(#function)
         guard
             let url = URL(string: urlStringMath)
@@ -44,9 +45,13 @@ class SWAPI_Helper{
             }
         }
         task.resume()
+        
+        return apiResponse;
     }
 	
-	static public func fetchDate(){
+    static public func fetchDate(enteredNumber: String) -> String{
+        let enteredDate = enteredNumber.split(separator: "/");
+        let urlStringDate = urlString + enteredDate[0] + "/" + enteredDate[1] + "/date";
         print(#function)
         guard
             let url = URL(string: urlStringDate)
@@ -73,9 +78,12 @@ class SWAPI_Helper{
             }
         }
         task.resume()
+        
+        return apiResponse
     }
 	
-	static public func fetchNumber(){
+    static public func fetchNumber(enteredNumber: String) -> String{
+        let urlStringNumber = urlString + enteredNumber;
         print(#function)
         guard
             let url = URL(string: urlStringNumber)
@@ -102,5 +110,7 @@ class SWAPI_Helper{
             }
         }
         task.resume()
+        
+        return apiResponse
     }
 }
