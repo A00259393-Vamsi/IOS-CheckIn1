@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import CoreData
 
 class TableViewController: UITableViewController {
 
+    @IBOutlet weak var numberTableView: UITableView!
     var numberList = [Number]();
     
     override func viewDidLoad() {
@@ -30,16 +32,15 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return numberList.count;
+        return SWAPI_Helper.numbers.count;
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NumberIdentifier", for: indexPath)
 
-        let numbers = numberList[indexPath.row]
-        cell.textLabel?.text = numbers.numberStatement;
-
+        let numbers = SWAPI_Helper.numbers[indexPath.row]
+        cell.textLabel?.text = numbers.value(forKeyPath: "numberStatement") as? String
         return cell
     }
     
@@ -88,5 +89,26 @@ class TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func getDataFromStorage(){
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+              return
+            }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "NumberEntity")
+        
+        do {
+            SWAPI_Helper.numbers = try managedContext.fetch(fetchRequest)
+            self.numberTableView.reloadData()
+            } catch let error as NSError {
+              print("Could not fetch. \(error), \(error.userInfo)")
+            }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getDataFromStorage()
+      }
 
 }

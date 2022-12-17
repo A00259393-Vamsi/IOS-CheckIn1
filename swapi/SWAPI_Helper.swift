@@ -6,12 +6,15 @@
 //
 
 import Foundation
+import CoreData
 
 class SWAPI_Helper{
     static private let urlString = "http://numbersapi.com/";
     
     static let apiResponse = "";
     static var enteredNumber = "0";
+    
+    static var numbers: [NSManagedObject] = []
     
     static private let session: URLSession = {
         let config = URLSessionConfiguration.default

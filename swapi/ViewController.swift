@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
     
@@ -13,6 +14,8 @@ class ViewController: UIViewController {
     
     
     @IBOutlet var jokeLabel: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,7 @@ class ViewController: UIViewController {
             if let data = data, let dataString = String(data: data, encoding: .utf8) {
                 DispatchQueue.main.async {
                     self.jokeLabel.text = dataString
+                    self.saveDataToStorage()
                 }
             }else if let error = error {
                 
@@ -42,6 +46,7 @@ class ViewController: UIViewController {
             if let data = data, let dataString = String(data: data, encoding: .utf8) {
                 DispatchQueue.main.async {
                     self.jokeLabel.text = dataString
+                    self.saveDataToStorage()
                 }
             }else if let error = error {
                 
@@ -58,6 +63,7 @@ class ViewController: UIViewController {
             if let data = data, let dataString = String(data: data, encoding: .utf8) {
                 DispatchQueue.main.async {
                     self.jokeLabel.text = dataString
+                    self.saveDataToStorage()
                 }
             }else if let error = error {
                 
@@ -74,6 +80,28 @@ class ViewController: UIViewController {
             localNumber.isFavorite = true;
             NumberHelper.numberList[row] = localNumber;
         }
+    }
+    
+    func saveDataToStorage(){
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+              return
+            }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "NumberEntity",
+                                                    in: managedContext)!
+        let numberRecord = NSManagedObject(entity: entity,
+                                         insertInto: managedContext)
+        
+        numberRecord.setValue(enteredNumber.text, forKeyPath: "numberValue")
+        numberRecord.setValue(jokeLabel.text, forKeyPath: "numberStatement")
+        numberRecord.setValue(false, forKey: "isFavorite")
+        
+        do {
+              try managedContext.save()
+            SWAPI_Helper.numbers.append(numberRecord)
+            } catch let error as NSError {
+              print("Could not save. \(error), \(error.userInfo)")
+            }
     }
     
 }
