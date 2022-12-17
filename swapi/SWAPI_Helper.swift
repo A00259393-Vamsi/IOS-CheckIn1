@@ -26,19 +26,17 @@ class SWAPI_Helper{
             preconditionFailure("was not able to convert string to url: \(urlStringMath)")
         }
         
-        let request = URLRequest(url: url)
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "GET"
+        
         let task = session.dataTask(with: request) {
             data, response, error in
             
-            if let data = data {
-                do{
-                    let jsonData = try JSONSerialization.jsonObject(with: data)
-                    
-                    print(jsonData)
-                }catch let err{
-                    print("\(err)")
-                }
-            } else if let error = error {
+            if let data = data, let dataString = String(data: data, encoding: .utf8) {
+                    print("Response data string:\n \(dataString)")
+            }
+            else if let error = error {
                 print("error with data task, fetchMath: \(error)")
             } else {
                 print("something went wrong when fetching the directory: \(String(describing: response))")
@@ -63,14 +61,8 @@ class SWAPI_Helper{
         let task = session.dataTask(with: request) {
             data, response, error in
             
-            if let data = data {
-                do{
-                    let jsonData = try JSONSerialization.jsonObject(with: data)
-                    
-                    print(jsonData)
-                }catch let err{
-                    print("\(err)")
-                }
+            if let data = data, let dataString = String(data: data, encoding: .utf8) {
+                    print("Response data string:\n \(dataString)")
             } else if let error = error {
                 print("error with data task, fetchDate: \(error)")
             } else {
@@ -91,18 +83,14 @@ class SWAPI_Helper{
             preconditionFailure("was not able to convert string to url: \(urlStringNumber)")
         }
         
-        let request = URLRequest(url: url)
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        
         let task = session.dataTask(with: request) {
             data, response, error in
             
-            if let data = data {
-                do{
-                    let jsonData = try JSONSerialization.jsonObject(with: data)
-                    
-                    print(jsonData)
-                }catch let err{
-                    print("\(err)")
-                }
+            if let data = data, let dataString = String(data: data, encoding: .utf8) {
+                    print("Response data string:\n \(dataString)")
             } else if let error = error {
                 print("error with data task, fetchNumber: \(error)")
             } else {
