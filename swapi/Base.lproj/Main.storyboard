@@ -219,15 +219,6 @@
                                     <action selector="getDate:" destination="WOn-uI-qwP" eventType="touchUpInside" id="4Jp-gR-bE0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc2-66-4XU">
-                                <rect key="frame" x="22" y="628" width="345" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Mark as Favorite"/>
-                                <connections>
-                                    <action selector="markAsFavorite:" destination="WOn-uI-qwP" eventType="touchUpInside" id="q9N-wQ-FcI"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="jokeLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZr-lW-at3">
                                 <rect key="frame" x="22" y="303" width="345" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

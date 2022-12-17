@@ -74,14 +74,6 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func markAsFavorite(_ sender: UIButton) {
-        if let row = NumberHelper.getNumberList().firstIndex(where: {$0.numberValue == jokeLabel.text}) {
-            let localNumber = NumberHelper.numberList[row];
-            localNumber.isFavorite = true;
-            NumberHelper.numberList[row] = localNumber;
-        }
-    }
-    
     func saveDataToStorage(){
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
               return
